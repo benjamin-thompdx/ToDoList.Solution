@@ -18,6 +18,7 @@ namespace ToDoList.Models {
       Id = id;
     }
 
+    // Keturah and I covered this togther
     public static List<Item> GetAll () 
     {
       List<Item> allItems = new List<Item> { };
