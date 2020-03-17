@@ -49,3 +49,5 @@ namespace ToDoList
     }
   }
 }
+
+//walk through configuration for Entity Framework Core
