@@ -25,6 +25,7 @@ namespace ToDoList.Controllers
       return View();
     }
 
+    //example using Create using EF Core
     [HttpPost]
     public ActionResult Create(Item item)
     {
