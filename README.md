@@ -36,14 +36,16 @@ _Download Manually:_
 * Click downloaded file to unzip.
 * Open folder called "WordCounter.Solution".
 
-Installing MySQL | MacOS
+_Installing MySQL | MacOS:_
+
 * Download the MySQL Community Server DMG File from [MySQL Community Server](https://dev.mysql.com/downloads/file/?id=484914)
 * You can exit the mysql program by entering ```exit```.
 * Download the MySQL Workbench DMG File from [MySQL Workbench](https://dev.mysql.com/downloads/file/?id=484391). (Use the No thanks, just start my download link.)
 * Install MySQL Workbench to Applications folder.
 * Open MySQL Workbench and select the ```Local instance 3306 server```. You will need to enter the password you set. (We used ```epicodus```.) If it connects, you're all set.
 
- Installing MySQL | Windows 10
+_Installing MySQL | Windows 10:_
+
 * Download the MySQL Web Installer from [MySQL Downloads](https://dev.mysql.com/downloads/file/?id=484919) (Use the No thanks, just start my download link.)
 * You can exit the mysql program by entering ```exit```
 * Add the MySQL environment variable to the System PATH. We must include MySQL in the System Environment Path Variable. This is its own multi-step process. Instructions here are for Windows 10:
@@ -52,7 +54,8 @@ Installing MySQL | MacOS
   3. Add the exact location of your MySQL installation, and click OK. (This location is likely ```C:\Program Files\MySQL\MySQL Server 8.0\bin```, but may differ depending on your specific installation.)
 * Open MySQL Workbench and select the ```Local instance 3306``` server (it may have a different name). You will need to enter the password you set (We used ```epicodus```). If it connects, you're all set.
  
- MySQL Workbench Database Setup
+ _MySQL Workbench Database Setup:_
+
   > CREATE DATABASE `to_do_list`;
 
   > USE `to_do_list`;
@@ -62,6 +65,7 @@ Installing MySQL | MacOS
   > CREATE TABLE `items` (`ItemId` PRIMARY KEY, `Description` VARCHAR(255), `CategoryId` INT));
 
 _Note For Editors:_ 
+
 * Download the .NET Core SDK [Software Development Kit](https://dotnet.microsoft.com/download)
 * Open the .Net Core SDK file and install
 * To confirm installation was successful, run the ```$ dotnet --version``` command in your terminal
