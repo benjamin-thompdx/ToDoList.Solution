@@ -41,9 +41,34 @@ _Note For Editors:_
 * Download the .NET Core SDK [Software Development Kit](https://dotnet.microsoft.com/download)
 * Open the .Net Core SDK file and install
 * To confirm installation was successful, run the ```$ dotnet --version``` command in your terminal
-
 * Install dotnet script, run the ```$ dotnet tool install -g dotnet-script``` command in your terminal
 * Restart your terminal to complete installation, and run the ```$ dotnet run``` command to run application within your terminal - Note: To exit, simply press ```Ctrl + C```
+
+Installing MySQL | MacOS
+* Download the MySQL Community Server DMG File from [MySQL Community Server](https://dev.mysql.com/downloads/file/?id=484914)
+* You can exit the mysql program by entering ```exit```.
+* Download the MySQL Workbench DMG File from [MySQL Workbench](https://dev.mysql.com/downloads/file/?id=484391). (Use the No thanks, just start my download link.)
+* Install MySQL Workbench to Applications folder.
+* Open MySQL Workbench and select the ```Local instance 3306 server```. You will need to enter the password you set. (We used ```epicodus```.) If it connects, you're all set.
+
+ Installing MySQL | Windows 10
+* Download the MySQL Web Installer from [MySQL Downloads](https://dev.mysql.com/downloads/file/?id=484919) (Use the No thanks, just start my download link.)
+* You can exit the mysql program by entering ```exit```
+* Add the MySQL environment variable to the System PATH. We must include MySQL in the System Environment Path Variable. This is its own multi-step process. Instructions here are for Windows 10:
+  1. Open the Control Panel and visit System > Advanced System Settings > Environment Variables...
+  2. Then select PATH..., click Edit..., then Add.
+  3. Add the exact location of your MySQL installation, and click OK. (This location is likely ```C:\Program Files\MySQL\MySQL Server 8.0\bin```, but may differ depending on your specific installation.)
+* Open MySQL Workbench and select the ```Local instance 3306``` server (it may have a different name). You will need to enter the password you set (We used ```epicodus```). If it connects, you're all set.
+ 
+ MySQL Workbench Database Setup
+  > CREATE DATABASE `to_do_list`;
+
+  > USE `to_do_list`;
+  
+  > CREATE TABLE `categories` (`CategoryId` PRIMARY KEY, `Name` VARCHAR(255));
+
+  > CREATE TABLE `items` (`ItemId` PRIMARY KEY, `Description` VARCHAR(255), `CategoryId` INT));
+
 
 ## Known Bugs
 
