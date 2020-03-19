@@ -54,13 +54,19 @@ _No known bugs at this time._
 _Have a bug or an issue with this application? [Open a new issue](https://github.com/benjamin-thompdx/WordCounter.Solution/issues) here on GitHub._
 
 ## Technologies Used
-* _Git_
-* _C#_
-* _.NET Core 2.2_
-* _dotnet script_
-* _VS Code_
-* MVC framework
-* CRUD functionality
+
+* _Git 2.23.0_
+* _C# language_
+* _.NET Core 2.2.106_
+* _dotnet script 0.50.1_
+* _VS Code 1.43.1_
+* _Model-View-Controller(MVC) framework_
+* _Create, Read, Update, Delete (CRUD) functionality_
+* _MySQL 8.0.15_
+* _MySQL Workbench 8.0.15_
+* _Entity Framework Core 2.2.4_
+* _Language-Integrated Query (LINQ)_
+* _ASP.NET Razor_
 
 ### License
 
