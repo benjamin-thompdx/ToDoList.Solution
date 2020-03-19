@@ -1,21 +1,20 @@
 # _To Do List_
 
-#### _A C# console to do list application with basic functionality to record Items._, _Mar. 11, 2020_
+#### _A C# MVC application to track tasks by category._, _Mar. 18, 2020_
 
 #### By _**Benjamin Thom**_
 
 ## Description
 
-_A to do list a user can utilize to manage and track tasks, items, etc._
+_A program for a user to track tasks based on custom categories (such as Home, Work, etc)._
 
 ## Project Specifications
 
 | Behavior | Input | Output |
 |---|:---:|:---:|
-||||
-||||
-||||
-||||
+|The program displays a welcome message "Welcome to the To Do List!" and two links for viewing categories "See all categories" and viewing items "See all items"|User enters the following url: http://localhost:5000| Welcome Message: "Welcome to the To Do List!"|
+|User clicks on "See all categories" or "See all items" and is routed to the corresponding view with options to add new category or item|User clicks on link and the programs displays currently added items or categories|Catagories: "Home" Items: "Walk the dog"|
+|A user clicks the "add new category/item" link and is routed to a new category/item view where they can insert category/item details. Once the user inputs the details, the user can hit submit and will be routed to the categories/items view|User clicks on selected "add new" link and inserts category/items details, and hits submit|"Add a new category/task", Description: "Home"/"Walk the dog", click "Add new category/task" button|
 
 ## Setup/Installation Requirements
 
@@ -36,13 +35,6 @@ _Download Manually:_
 * Click "Download ZIP".
 * Click downloaded file to unzip.
 * Open folder called "WordCounter.Solution".
-
-_Note For Editors:_ 
-* Download the .NET Core SDK [Software Development Kit](https://dotnet.microsoft.com/download)
-* Open the .Net Core SDK file and install
-* To confirm installation was successful, run the ```$ dotnet --version``` command in your terminal
-* Install dotnet script, run the ```$ dotnet tool install -g dotnet-script``` command in your terminal
-* Restart your terminal to complete installation, and run the ```$ dotnet run``` command to run application within your terminal - Note: To exit, simply press ```Ctrl + C```
 
 Installing MySQL | MacOS
 * Download the MySQL Community Server DMG File from [MySQL Community Server](https://dev.mysql.com/downloads/file/?id=484914)
@@ -69,6 +61,16 @@ Installing MySQL | MacOS
 
   > CREATE TABLE `items` (`ItemId` PRIMARY KEY, `Description` VARCHAR(255), `CategoryId` INT));
 
+_Note For Editors:_ 
+* Download the .NET Core SDK [Software Development Kit](https://dotnet.microsoft.com/download)
+* Open the .Net Core SDK file and install
+* To confirm installation was successful, run the ```$ dotnet --version``` command in your terminal
+* Install dotnet script, run the ```$ dotnet tool install -g dotnet-script``` command in your terminal
+* Restart your terminal to complete installation, and run the ```$ dotnet run``` command to run application within your terminal - Note: To exit, simply press ```Ctrl + C```
+* Open project's productions directory within your terminal ```$ cd ToDoList.Solution/ToDoList```
+* Run the command ```> dotnet restore```
+* Run the command ```> dotnet build``` 
+* If build is successful, run the command ```> dotnet run```, if build failed, make necessary updates and repeat ```> dotnet restore``` followed by ```> dotnet build```
 
 ## Known Bugs
 
