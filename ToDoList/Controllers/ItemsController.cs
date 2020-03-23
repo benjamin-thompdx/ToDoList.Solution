@@ -35,11 +35,14 @@ namespace ToDoList.Controllers
 //       return RedirectToAction("Index");
 //     }
 
-//     public ActionResult Details(int id)
-//     {
-//       Item thisItem = _db.Items.FirstOrDefault(items => items.ItemId == id);
-//       return View(thisItem);
-//     }
+    public ActionResult Details(int id)
+    {
+        var thisItem = _db.Items
+            .Include(item => item.Categories)
+            .ThenInclude(join => join.Category)
+            .FirstOrDefault(item => item.ItemId == id);
+        return View(thisItem);
+    }
 
 //     public ActionResult Edit(int id)
 //     {
