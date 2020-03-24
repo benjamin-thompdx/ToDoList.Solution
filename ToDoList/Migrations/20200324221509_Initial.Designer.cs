@@ -9,8 +9,8 @@ using ToDoList.Models;
 namespace ToDoList.Migrations
 {
     [DbContext(typeof(ToDoListContext))]
-    [Migration("20200324141419_addIdentity")]
-    partial class addIdentity
+    [Migration("20200324221509_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -213,7 +213,11 @@ namespace ToDoList.Migrations
 
                     b.Property<string>("Description");
 
+                    b.Property<string>("UserId");
+
                     b.HasKey("ItemId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Items");
                 });
@@ -274,6 +278,13 @@ namespace ToDoList.Migrations
                         .WithMany("Categories")
                         .HasForeignKey("ItemId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("ToDoList.Models.Item", b =>
+                {
+                    b.HasOne("ToDoList.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
         }
