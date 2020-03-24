@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ToDoList.Models;
-using Microsoft.AspNetCore.Identity;
 
 namespace ToDoList
 {
@@ -46,7 +46,7 @@ namespace ToDoList
       {
         routes.MapRoute(
           name: "default",
-          template: "{controller=Home}/{action=Index}/{id?}");
+          template: "{controller=Account}/{action=Index}/{id?}");
       });
 
       app.Run(async (context) =>
