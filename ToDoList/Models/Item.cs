@@ -1,17 +1,17 @@
 using System.Collections.Generic;
 
-namespace ToDoList.Models 
+namespace ToDoList.Models
 {
-  public class Item 
-  {
-    public Item() 
+    public class Item
     {
-      this.Categories = new HashSet<CategoryItem>();
+        public Item()
+        {
+            this.Categories = new HashSet<CategoryItem>();
+        }
+
+        public int ItemId { get; set; }
+        public string Description { get; set; }
+
+        public ICollection<CategoryItem> Categories { get;}
     }
-
-    public int ItemId { get; set; }
-    public string Description { get; set; }
-
-    public ICollection<CategoryItem> Categories { get; }
-  }
 }
