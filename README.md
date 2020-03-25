@@ -53,16 +53,6 @@ _Installing MySQL | Windows 10:_
   2. Then select PATH..., click Edit..., then Add.
   3. Add the exact location of your MySQL installation, and click OK. (This location is likely ```C:\Program Files\MySQL\MySQL Server 8.0\bin```, but may differ depending on your specific installation.)
 * Open MySQL Workbench and select the ```Local instance 3306``` server (it may have a different name). You will need to enter the password you set (We used ```epicodus```). If it connects, you're all set.
- 
- _MySQL Workbench Database Setup:_
-
-  > CREATE DATABASE `to_do_list`;
-
-  > USE `to_do_list`;
-  
-  > CREATE TABLE `categories` (`CategoryId` PRIMARY KEY, `Name` VARCHAR(255));
-
-  > CREATE TABLE `items` (`ItemId` PRIMARY KEY, `Description` VARCHAR(255), `CategoryId` INT));
 
 _Note For Editors:_ 
 
@@ -72,15 +62,20 @@ _Note For Editors:_
 * Install dotnet script, run the ```$ dotnet tool install -g dotnet-script``` command in your terminal
 * Restart your terminal to complete installation, and run the ```$ dotnet run``` command to run application within your terminal - Note: To exit, simply press ```Ctrl + C```
 * Open project's productions directory within your terminal ```$ cd ToDoList.Solution/ToDoList```
-* Run the command ```> dotnet restore```
-* Run the command ```> dotnet build``` 
-* If build is successful, run the command ```> dotnet run```, if build failed, make necessary updates and repeat ```> dotnet restore``` followed by ```> dotnet build```
+* Run the command ```dotnet restore```
+* Run the command ```dotnet build``` 
+  * If build is successful,run the following commands:
+    1. ```dotnet ef migrations add Initial```
+    2. ```dotnet ef database update```
+  * if build failed, make necessary updates and rerun ```dotnet restore``` followed by ```dotnet build```, and then run the following commands:
+    1. ```dotnet ef migrations add Initial```
+    2. ```dotnet ef database update```
 
 ## Known Bugs
 
 _No known bugs at this time._
 
-## Support and contact details
+## Support and Contact Details
 
 _Have a bug or an issue with this application? [Open a new issue](https://github.com/benjamin-thompdx/WordCounter.Solution/issues) here on GitHub._
 
