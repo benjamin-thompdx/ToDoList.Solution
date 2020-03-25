@@ -23,18 +23,18 @@ _In Terminal:_
 * Navigate to where you want this application to be saved, i.e.:
 ```cd desktop```
 * Clone the file from GitHub with HTTPS
-```git clone https://github.com/benjamin-thompdx/WordCounter.Solution.git```
+```git clone https://github.com/benjamin-thompdx/ToDoList.Solution.git```
 * Open file in your preferred text editor
 * On Mac: ```open -a {your text editor} WordCounter.Solution```
 * On Windows: ```WordCounter.Solution```
 
 _Download Manually:_
 
-* Navigate to https://github.com/benjamin-thompdx/WordCounter.Solution.
+* Navigate to https://github.com/benjamin-thompdx/ToDoList.Solution.
 * Click the green "Clone or Download" button.
 * Click "Download ZIP".
 * Click downloaded file to unzip.
-* Open folder called "WordCounter.Solution".
+* Open folder called "ToDoList.Solution".
 
 _Installing MySQL | MacOS:_
 
@@ -77,7 +77,7 @@ _No known bugs at this time._
 
 ## Support and Contact Details
 
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/benjamin-thompdx/WordCounter.Solution/issues) here on GitHub._
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/benjamin-thompdx/ToDoList.Solution/issues) here on GitHub._
 
 ## Technologies Used
 
