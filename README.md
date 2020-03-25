@@ -67,7 +67,7 @@ _Note For Editors:_
   * If build is successful,run the following commands:
     1. ```dotnet ef migrations add Initial```
     2. ```dotnet ef database update```
-  * if build failed, make necessary updates and rerun ```dotnet restore``` followed by ```dotnet build```, and then run the following commands:
+  * If build failed, make necessary updates and rerun ```dotnet restore``` followed by ```dotnet build```, and then run the following commands:
     1. ```dotnet ef migrations add Initial```
     2. ```dotnet ef database update```
 
